@@ -56,8 +56,9 @@ const Navbar = ({ cartItem, guns }) => {
         contentLabel="Example Modal"
       >
         <AiOutlineCloseCircle className="close__modal" onClick={closeModal} />
+        <h1 style={{ 'text-align': 'center' }}>Added to Cart</h1>
         {guns.map((gun) => (
-          <Modalcart />
+          <Modalcart gun={gun} />
         ))}
       </Modal>
     </div>

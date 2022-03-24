@@ -1,9 +1,16 @@
 import React from 'react';
 import './Modalcart.css';
-const Modalcart = () => {
+const Modalcart = ({ gun }) => {
+  const { img, name, category } = gun;
   return (
-    <div>
-      <h1>fdasjkfjka</h1>
+    <div className="modal__card">
+      <div className="modal__img">
+        <img src={img} alt="" srcset="" />
+      </div>
+      <div className="modal__details">
+        <h3>{name}</h3>
+        <p>{category}</p>
+      </div>
     </div>
   );
 };
