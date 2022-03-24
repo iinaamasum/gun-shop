@@ -5,14 +5,15 @@ import Shopping from './components/Shopping/Shopping';
 
 function App() {
   const [cartItem, setCartItem] = useState(0);
+  const [guns, setGun] = useState([]);
   const handleClickToCart = (gun) => {
     setCartItem(cartItem + 1);
-    console.log(gun);
+    setGun([...guns, gun]);
   };
-  console.log(cartItem);
+  console.log(guns);
   return (
     <div>
-      <Navbar cartItem={cartItem} />
+      <Navbar cartItem={cartItem} guns={guns} />
       <Shopping handleClickToCart={handleClickToCart} />
     </div>
   );
