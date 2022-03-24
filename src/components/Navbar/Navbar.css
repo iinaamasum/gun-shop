@@ -52,3 +52,19 @@
   left: -0.1rem;
   color: orangered;
 }
+
+.modal {
+  border-radius: 1rem;
+  position: absolute;
+  padding: 2rem;
+  background-color: rgba(128, 0, 128, 0.297);
+}
+
+.close__modal {
+  font-size: 30px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  cursor: pointer;
+  color: red;
+}

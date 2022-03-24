@@ -1,8 +1,10 @@
 import React from 'react';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { BsFillCartFill } from 'react-icons/bs';
 import { FaRegUserCircle } from 'react-icons/fa';
 import Modal from 'react-modal';
 import logo from '../../assets/images/logo.png';
+import Modalcart from '../Modalcart/Modalcart';
 import './Navbar.css';
 
 const customStyles = {
@@ -46,14 +48,16 @@ const Navbar = ({ cartItem, guns }) => {
 
       {/* modal */}
       <Modal
+        className="modal"
         isOpen={modalIsOpen}
         // onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
       >
+        <AiOutlineCloseCircle className="close__modal" onClick={closeModal} />
         {guns.map((gun) => (
-          <h3>{gun.name}</h3>
+          <Modalcart />
         ))}
       </Modal>
     </div>
