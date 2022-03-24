@@ -41,3 +41,14 @@
   color: orangered;
   cursor: pointer;
 }
+
+.cart {
+  display: flex;
+}
+
+.item__num {
+  position: relative;
+  top: -1rem;
+  left: -0.1rem;
+  color: orangered;
+}

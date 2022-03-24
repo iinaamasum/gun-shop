@@ -3,7 +3,7 @@ import { BsFillCartFill } from 'react-icons/bs';
 import { FaRegUserCircle } from 'react-icons/fa';
 import logo from '../../assets/images/logo.png';
 import './Navbar.css';
-const Navbar = () => {
+const Navbar = ({ cartItem }) => {
   return (
     <div className="nav">
       <div className="nav__container">
@@ -14,8 +14,9 @@ const Navbar = () => {
         <ul className="nav__link">
           <li>Home</li>
           <li>Guns</li>
-          <li>
+          <li className="cart">
             <BsFillCartFill />
+            <div className="item__num">{cartItem}</div>
           </li>
           <li>
             <FaRegUserCircle />

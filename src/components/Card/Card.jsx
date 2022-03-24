@@ -1,7 +1,8 @@
 import React from 'react';
+import { BsFillCartFill } from 'react-icons/bs';
 import './Card.css';
-const Card = (props) => {
-  const { name, img, action, capacity, category, bullet } = props.gun;
+const Card = ({ gun, handleClickToCart }) => {
+  const { name, img, action, capacity, category, bullet } = gun;
   return (
     <div>
       <div className="card">
@@ -15,8 +16,9 @@ const Card = (props) => {
           <p>Bullet: {bullet}</p>
           <p>Capacity: {capacity}</p>
         </div>
-        <div className="add__cart">
-          <p>addtocart</p>
+        <div onClick={() => handleClickToCart(gun)} className="add__cart">
+          <p style={{ 'padding-right': '10px' }}>Add To Cart</p>
+          <BsFillCartFill />
         </div>
       </div>
     </div>

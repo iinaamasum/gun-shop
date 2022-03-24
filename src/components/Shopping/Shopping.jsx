@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import './Shopping.css';
 
-const Shopping = () => {
+const Shopping = ({ handleClickToCart }) => {
   const [guns, setGuns] = useState([]);
   useEffect(() => {
     fetch('data.json')
@@ -13,7 +13,7 @@ const Shopping = () => {
     <div className="row__container">
       <div className="row">
         {guns.map((gun) => (
-          <Card key={gun.id} gun={gun} />
+          <Card key={gun.id} gun={gun} handleClickToCart={handleClickToCart} />
         ))}
       </div>
     </div>

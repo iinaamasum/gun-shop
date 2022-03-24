@@ -1,7 +1,7 @@
 .card {
   background-color: #a7b2b981;
   position: relative;
-  height: 37rem;
+  height: 38rem;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 8px 2px rgba(128, 128, 128, 0.678);
 }
@@ -24,4 +24,21 @@ p {
 .add__cart {
   position: absolute;
   bottom: 0;
+  background-color: rgba(128, 0, 128, 0.474);
+  font-size: 1.25rem;
+  padding: 0;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  border-radius: 0 0 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add__cart:hover {
+  background-color: purple;
+  transition: all 0.2s ease-in-out;
 }
