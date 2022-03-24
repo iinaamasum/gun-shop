@@ -8,3 +8,24 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
 }
+
+@media (max-width: 1200px) {
+  .row {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1rem;
+  }
+  .row__container {
+    width: 85%;
+    margin: 3rem 7.5%;
+  }
+}
+@media (min-width: 401) and (max-width: 900px) {
+  .row {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1rem;
+  }
+  .row__container {
+    width: 96%;
+    margin: 3rem 2%;
+  }
+}

@@ -68,3 +68,13 @@
   cursor: pointer;
   color: red;
 }
+
+@media (max-width: 600px) {
+  .nav__container {
+    width: 96%;
+    margin: 0 2%;
+  }
+  .logo {
+    display: none;
+  }
+}
