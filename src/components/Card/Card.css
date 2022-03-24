@@ -1,0 +1,25 @@
+.card {
+  background-color: aqua;
+  position: relative;
+  height: 37rem;
+  border: 2px solid rgba(255, 68, 0, 0.342);
+  border-radius: 0.5rem;
+  clip-path: polygon(15% 0%, 100% 0, 100% 90%, 85% 100%, 0 100%, 0% 10%);
+}
+.card__img img {
+  height: 20rem;
+  width: 96%;
+  border-radius: 0.5rem;
+  margin: 2%;
+  clip-path: polygon(15% 0%, 100% 0, 100% 90%, 85% 100%, 0 100%, 0% 10%);
+}
+
+h2,
+p {
+  padding-left: 1rem;
+}
+
+.add__cart {
+  position: absolute;
+  bottom: 0;
+}

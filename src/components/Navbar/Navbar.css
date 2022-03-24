@@ -1,0 +1,43 @@
+.nav {
+  background-color: #1c2b35e1;
+  color: white;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 7.5%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo:hover {
+  color: orangered;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+
+.nav__link {
+  display: flex;
+}
+
+.nav__link li {
+  list-style: none;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.nav__link li:hover {
+  color: orangered;
+  cursor: pointer;
+}
